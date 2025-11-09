@@ -1,0 +1,22 @@
+```python
+# Ensure that the .env file is not included in the public repository.
+# Add the .env file to .gitignore to prevent it from being tracked by git.
+
+# Example .gitignore entry:
+# .env
+
+# Use environment variables to securely manage secrets.
+# Ensure that any secret keys are stored in the .env file and accessed via environment variables in the code.
+
+import os
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
+
+# Access the secret key using an environment variable
+# Example usage:
+# SECRET_KEY = os.getenv('SECRET_KEY')
+
+# Ensure that the .env file is properly secured and not exposed in the repository.
+```
