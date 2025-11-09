@@ -19,4 +19,8 @@ load_dotenv()
 # SECRET_KEY = os.getenv('SECRET_KEY')
 
 # Ensure that the .env file is properly secured and not exposed in the repository.
+
+# Security Fix: Ensure that the .env file is not included in the repository
+# by adding it to the .gitignore file. This prevents accidental exposure of secrets.
+# Additionally, ensure that any sensitive information is accessed via environment variables.
 ```
